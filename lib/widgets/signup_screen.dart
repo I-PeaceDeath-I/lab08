@@ -22,9 +22,9 @@ class SignUpPage extends StatelessWidget{
                             ),
                           ),
                           ),
-                          const Text(
+                          Text(
                             'Username',
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
                           const Padding(
                             padding: EdgeInsets.symmetric(vertical: 8),
@@ -35,32 +35,26 @@ class SignUpPage extends StatelessWidget{
                             ),
                           ),
 
-                          const Text(
+                          Text(
                             'Email',
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
 
                           const Padding(
                             padding: EdgeInsets.symmetric(vertical: 8),
                             child: TextField(
-                              decoration: InputDecoration(
-                                border: OutlineInputBorder(),
-                              ),
                             ),
                           ),
 
-                          const Text(
+                          Text(
                             'Password',
-                            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                            style: Theme.of(context).textTheme.bodyMedium,
                           ),
 
                           const Padding(
                             padding: EdgeInsets.symmetric(vertical: 8),
                             child: TextField(
                               obscureText: true,
-                              decoration: InputDecoration(
-                                border: OutlineInputBorder(),
-                              ),
                             ),
 
                           ),
@@ -69,13 +63,6 @@ class SignUpPage extends StatelessWidget{
                               SizedBox(
                                   width: double.infinity,
                                   child:  ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      backgroundColor: Colors.deepPurple,
-                                      foregroundColor: Colors.white,
-                                      shape: const RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.zero,
-                                      ),
-                                    ),
                                     onPressed: () => {
                                       showDialog(
                                         context: context,
@@ -87,7 +74,7 @@ class SignUpPage extends StatelessWidget{
                                         },
                                       )
                                     },
-                                    child: const Text("Sign up"),
+                                    child: const Text("Sign up",),
                                   )
                               ),
                             ],
@@ -97,11 +84,6 @@ class SignUpPage extends StatelessWidget{
                                 width: double.infinity,
                                 child:
                                 OutlinedButton(
-                                  style: OutlinedButton.styleFrom(
-                                    shape: const RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.zero,
-                                    ),
-                                  ),
                                   onPressed: () => {
                                     Navigator.pop(context)
                                   },
