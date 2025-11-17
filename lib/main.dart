@@ -25,7 +25,6 @@ class MyApp extends StatelessWidget {
           inputDecorationTheme: InputDecorationThemeData(
             border: OutlineInputBorder(),
           ),
-
           outlinedButtonTheme: OutlinedButtonThemeData(
             style: OutlinedButton.styleFrom(
               backgroundColor: Colors.white,
